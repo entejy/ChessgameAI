@@ -1,0 +1,10 @@
+ViroChess 2.6 — odznaki i panel admina
+
+1. Supabase > SQL Editor > New query: wklej virochess_admin.sql i kliknij Run (jednorazowo).
+2. GitHub: podmień virochess.html zawartością virochess_2_6.html (zmień nazwę na virochess.html).
+3. Zachowaj swój virochess-config.js, nie nadpisuj go.
+4. Render Build Command: mkdir -p public && cp virochess.html public/index.html && cp virochess-config.js public/
+5. Zaloguj się zweryfikowanym kontem michalvitoxd@gmail.com, otwórz zakładkę Admin.
+6. W zakładce Profil ustaw kraj i zapisz profil. W Gracze zobaczysz odznaki.
+
+UWAGA: tylko konto z potwierdzonym adresem e-mail właściciela może przyznawać role. Nie wklejaj klucza service_role do HTML.
