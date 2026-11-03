@@ -1,0 +1,24 @@
+VIROCHESS 2.3 — KONTA ONLINE
+
+1. Utwórz projekt na https://supabase.com/dashboard (bezpłatny plan może wystarczyć na start).
+2. W Supabase otwórz SQL Editor > New query, wklej zawartość supabase_setup.sql i uruchom.
+3. W Supabase Project Settings > API znajdź Project URL i publishable key (lub legacy anon public key).
+4. Otwórz virochess-config.js, zamień PASTE_SUPABASE_PROJECT_URL i PASTE_SUPABASE_PUBLISHABLE_KEY na te dane.
+   NIGDY nie wstawiaj service_role, secret key ani hasła bazy do kodu strony!
+5. W Authentication > Providers włącz Email. Zostaw włączone potwierdzenie adresu e-mail.
+6. W Authentication > URL Configuration ustaw Site URL na https://virochess-entejy.onrender.com
+   Dodaj https://virochess-entejy.onrender.com/** do Redirect URLs (także do odzyskiwania hasła).
+7. Prześlij do głównego katalogu GitHub repozytorium 3 pliki:
+   - virochess.html
+   - virochess-config.js
+   - supabase_setup.sql (opcjonalnie, SQL wykonuje się w Supabase)
+8. Render Build Command: mkdir -p public && cp virochess.html public/index.html && cp virochess-config.js public/
+   Publish directory: public
+9. Po deployu otwórz stronę i przetestuj rejestrację, potwierdzenie e-maila, logowanie i zdjęcie.
+
+UWAGI:
+- Konta, opis i zdjęcia są online; statystyki partii pozostają lokalne.
+- Nie ma jeszcze rozgrywek multiplayer ani globalnego rankingu.
+- Ustaw silne hasło; nie udostępniaj danych logowania.
+- Jeśli włączysz potwierdzenie e-maila, użytkownik musi kliknąć link w otrzymanej wiadomości.
+- Zdjęcia są prywatne i udostępniane zalogowanemu właścicielowi przez czasowe adresy.
